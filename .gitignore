@@ -24,6 +24,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# Configuración local de herramientas (no publicar)
+.opencode/
+
 # Tauri
 src-tauri/target
 src-tauri/gen/schemas
