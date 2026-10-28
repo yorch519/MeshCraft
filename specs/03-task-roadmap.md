@@ -35,6 +35,7 @@
 
 ### [Task 1.2] Configuración de Tauri v2, CSP y Capacidades
 
+* **Estado:** 🟡 Implementada — pendiente prueba manual de diálogos (2026-10-28)
 * **Esfuerzo:** `S` · **Depende de:** 1.1
 * **Objetivo:** Dejar la ventana, la seguridad y los permisos listos para el resto del proyecto.
 * **Archivos:** `src-tauri/tauri.conf.json`, `src-tauri/capabilities/default.json`, `src-tauri/src/lib.rs`.
@@ -45,9 +46,9 @@
   4. Aplicar la CSP de `02-architecture-spec.md` §4.3 (incluye `wasm-unsafe-eval` y `worker-src`).
   5. **No** instalar `tauri-plugin-fs` ni `tauri-plugin-shell`.
 * **DoD:**
-  - [ ] La consola no muestra violaciones de CSP.
+  - [x] La consola no muestra violaciones de CSP.
   - [ ] `open()` y `save()` del diálogo funcionan; "revelar en carpeta" abre el explorador.
-  - [ ] `cargo clippy` sin advertencias.
+  - [x] `cargo clippy` sin advertencias.
 
 ### [Task 1.3] Modelos Rust, Errores y Generación de Tipos con ts-rs
 
