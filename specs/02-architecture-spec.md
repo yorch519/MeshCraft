@@ -4,17 +4,17 @@
 
 | Capa | Tecnología / Librería | Propósito |
 | :--- | :--- | :--- |
-| **Frontend UI** | React 19.x + TypeScript 5.x + Vite 7.x | Interfaz declarativa y tipada |
-| **Estilos & Componentes** | Tailwind CSS 4.x (`@tailwindcss/vite`) + Lucide Icons + `clsx` / `tailwind-merge` | Estilizado modular y sistema de iconos |
-| **Estado Global** | Zustand 5.x | Estado ligero y reactivo |
-| **Graphics Engine** | Three.js + `@react-three/fiber` 9.x + `@react-three/drei` 10.x | Renderizado 3D WebGL y visualización |
-| **Optimización** | `@gltf-transform/core` 4.x + `@gltf-transform/functions` 4.x + `meshoptimizer` (WASM) | Simplificación con preservación de atributos |
-| **Desktop Core** | Tauri v2 (Rust 1.80+) | Runtime nativo macOS/Windows, acceso a archivos y SQLite |
+| **Frontend UI** | React 19.3 + TypeScript 6.0 + Vite 8.3 | Interfaz declarativa y tipada |
+| **Estilos & Componentes** | Tailwind CSS 4.3 (`@tailwindcss/vite`) + Lucide Icons + `clsx` / `tailwind-merge` | Estilizado modular y sistema de iconos |
+| **Estado Global** | Zustand 5.0 | Estado ligero y reactivo |
+| **Graphics Engine** | Three.js 0.186 + `@react-three/fiber` 9.8 + `@react-three/drei` 10.7 | Renderizado 3D WebGL y visualización |
+| **Optimización** | `@gltf-transform/core` 4.5 + `@gltf-transform/functions` 4.5 + `meshoptimizer` 1.3 (WASM) | Simplificación con preservación de atributos |
+| **Desktop Core** | Tauri 2.12 (Rust 1.99, edición 2024) | Runtime nativo macOS/Windows, acceso a archivos y SQLite |
 | **Persistencia Local** | `rusqlite` (feature `bundled`) + `rusqlite_migration` | SQLite embebido, sin dependencia del sistema |
 | **Contratos** | `ts-rs` 10.x (dev-dependency) | Generación de tipos TypeScript desde Rust |
 | **Utilidades Rust** | `serde`, `thiserror`, `uuid` v4, `chrono`, `tempfile`, `percent-encoding` | Serialización, errores, IDs, escritura atómica y rutas en headers |
-| **Pruebas** | Vitest 3.x + Testing Library / `cargo test` | Pruebas unitarias de frontend y backend |
-| **Gestor de paquetes** | pnpm 10.x | Instalación reproducible con lockfile |
+| **Pruebas** | Vitest (fijado en Task 1.7) + Testing Library / `cargo test` | Pruebas unitarias de frontend y backend |
+| **Gestor de paquetes** | pnpm 12.x | Instalación reproducible con lockfile |
 
 > **Política de versiones:** las versiones exactas se fijan en `package.json`, `pnpm-lock.yaml` y `Cargo.toml` en la Tarea 1.1, verificando la matriz de compatibilidad (React 19 ↔ R3F 9, Tailwind 4 CSS-first). No se usa CDN ni fuente remota: todo se empaqueta.
 
@@ -564,8 +564,8 @@ Las advertencias (`warnings: string[]`) son siempre no bloqueantes y se muestran
 | macOS | 12 Monterey o superior; Intel y Apple Silicon |
 | Windows | 10 21H2+ / 11; x64 y ARM64; WebView2 Evergreen |
 | GPU | WebGL2 obligatorio; mensaje claro si no está disponible |
-| Node / pnpm | Node 22 LTS / pnpm 10 |
-| Rust | 1.80+ (edición 2021) |
+| Node / pnpm | Node 26 LTS / pnpm 12 |
+| Rust | 1.99+ (edición 2024) |
 
 **Reglas de versionado:**
 

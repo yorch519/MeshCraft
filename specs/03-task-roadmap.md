@@ -20,7 +20,7 @@
 * **Objetivo:** Inicializar el proyecto multiplataforma con tooling reproducible y versiones pineadas.
 * **Archivos:** `package.json`, `pnpm-lock.yaml`, `tsconfig.json`, `vite.config.ts`, `src/`, `src-tauri/`, `.gitignore`, `README.md`.
 * **Instrucciones:**
-  1. Crear el proyecto con la plantilla Tauri v2 + React + TypeScript + Vite y fijar pnpm 10 / Node 22.
+  1. Crear el proyecto con la plantilla Tauri v2 + React + TypeScript + Vite, fijando **Node 26 LTS** y **pnpm 12**.
   2. Configurar Tailwind CSS 4 con `@tailwindcss/vite` (CSS-first, **sin** `tailwind.config.js`).
   3. Instalar `lucide-react`, `clsx`, `tailwind-merge`, `zustand`, `three`, `@react-three/fiber`, `@react-three/drei`, `@gltf-transform/core`, `@gltf-transform/functions`, `@gltf-transform/extensions`, `meshoptimizer`, `draco3d`.
   4. Añadir scripts: `dev`, `build`, `typecheck`, `test`, `gen:types`, `copy-decoders`, `verify`. `postinstall` ejecuta `copy-decoders`.
