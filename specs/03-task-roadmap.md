@@ -16,6 +16,7 @@
 
 ### [Task 1.1] Scaffold Tauri v2 + React 19 + TypeScript + Tailwind 4
 
+* **Estado:** ✅ Completada (2026-10-28)
 * **Esfuerzo:** `M` · **Depende de:** Fase 0
 * **Objetivo:** Inicializar el proyecto multiplataforma con tooling reproducible y versiones pineadas.
 * **Archivos:** `package.json`, `pnpm-lock.yaml`, `tsconfig.json`, `vite.config.ts`, `src/`, `src-tauri/`, `.gitignore`, `README.md`.
@@ -27,10 +28,10 @@
   5. `git init`, `.gitignore` (`node_modules`, `dist`, `target`, `*.db`, `public/decoders`) y README con requisitos y comandos.
   6. Verificar la matriz React 19 ↔ R3F 9 ↔ Tailwind 4 con un *smoke test*.
 * **DoD:**
-  - [ ] `pnpm tauri dev` abre una ventana con estilos Tailwind aplicados.
-  - [ ] `pnpm typecheck` y `pnpm build` pasan sin errores.
-  - [ ] `pnpm copy-decoders` deja DRACO, Basis y Meshopt en `public/decoders/`.
-  - [ ] Primer commit con specs + scaffold.
+  - [x] `pnpm tauri dev` abre una ventana con estilos Tailwind aplicados.
+  - [x] `pnpm typecheck` y `pnpm build` pasan sin errores.
+  - [x] `pnpm copy-decoders` deja DRACO, Basis y Meshopt en `public/decoders/`.
+  - [x] Primer commit con specs + scaffold.
 
 ### [Task 1.2] Configuración de Tauri v2, CSP y Capacidades
 
