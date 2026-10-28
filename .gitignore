@@ -1,0 +1,41 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencias y builds
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Tauri
+src-tauri/target
+src-tauri/gen/schemas
+
+# Decoders copiados en postinstall (se regeneran, no se versionan)
+public/decoders
+
+# Base de datos local y temporales
+*.db
+*.db-shm
+*.db-wal
+
+# Entorno
+.env
+.env.*
