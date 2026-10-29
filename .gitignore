@@ -34,6 +34,9 @@ src-tauri/gen/schemas
 # Decoders copiados en postinstall (se regeneran, no se versionan)
 public/decoders
 
+# Fixtures de terceros (se descargan según tests/fixtures/README.md)
+tests/fixtures/vendor/
+
 # Base de datos local y temporales
 *.db
 *.db-shm
